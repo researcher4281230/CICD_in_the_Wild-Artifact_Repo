@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+ThesisArtifacts/** filter=lfs diff=lfs merge=lfs -text
+ThesisArtifacts/**/*.yml filter=lfs diff=lfs merge=lfs -text
+ThesisArtifacts/**/*.yaml filter=lfs diff=lfs merge=lfs -text
+ThesisArtifacts/repos.db filter=lfs diff=lfs merge=lfs -text
+ThesisArtifacts/QuestionnaireFull.pdf -filter -diff -merge text
+ThesisArtifacts/AITestFiles/** filter=lfs diff=lfs merge=lfs -text
